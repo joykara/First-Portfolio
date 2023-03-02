@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Playfair+Display:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    padding: 20vh;
+    background-color: rgb(195, 180, 180);
+}
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 20vh;
+    text-align: center;
+}
+.skills{
+    text-align: center;
+    justify-content: center;
+    padding: 20vh;
+}
+.skills ul{
+    display: inline-flex;
+    list-style: none;
+}
+.skills ul li{
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    border: 10px, solid, black;
+    background-color: blueviolet;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    padding: 20vh;
+    text-align: center;
+}
