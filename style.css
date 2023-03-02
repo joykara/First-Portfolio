@@ -7,11 +7,22 @@
     margin: 0;
     box-sizing: border-box;
 }
-.description{
+.container{
+    min-height: 50vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 20vh;
-    background-color: rgb(195, 180, 180);
+    /* background-color: rgb(195, 180, 180); */
+}
+.description{
+    background-image: url(./img/download.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+.description h1{
+    font-size: 2.5em;
+    color:aliceblue;
 }
 .about{
     display: flex;
@@ -40,4 +51,14 @@
     justify-content: center;
     padding: 20vh;
     text-align: center;
+}
+.contact{
+    padding: 20vh;
+}
+.contact ul{
+    display: inline-flex;
+    list-style: georgian;
+}
+.contact ul li{
+    margin-right: 10vh;
 }
