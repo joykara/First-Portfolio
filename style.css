@@ -8,21 +8,33 @@
     box-sizing: border-box;
 }
 .container{
-    min-height: 50vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     /* background-color: rgb(195, 180, 180); */
 }
+    /* Description */
 .description{
     background-image: url(./img/download.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
 }
-.description h1{
-    font-size: 2.5em;
+.container h1{
+    font-size: 2.5rem;
     color:aliceblue;
+    display: block;
+    width: fit-content;
+    position: relative;
+}
+.container h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: darkgray;
 }
 .about{
     display: flex;
