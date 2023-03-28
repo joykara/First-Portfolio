@@ -44,6 +44,7 @@
     text-align: center;
 }
 .skills{
+    background-size: cover;
     text-align: center;
     justify-content: center;
     padding: 20vh;
