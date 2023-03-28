@@ -17,7 +17,7 @@
 }
     /* Description */
 .description{
-    background-size: cover;
+    background-size: auto;
     background-position: top center;
     position: relative;
 }
@@ -38,13 +38,14 @@
     background-color: darkgray;
 }
 .about{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     padding: 20vh;
     text-align: center;
 }
 .skills{
-    background-size: cover;
+    min-height: 100vh;
     text-align: center;
     justify-content: center;
     padding: 20vh;
