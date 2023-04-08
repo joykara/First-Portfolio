@@ -7,15 +7,26 @@
     margin: 0;
     box-sizing: border-box;
 }
+#heading{
+    font-family: cursive;
+    color: aliceblue;
+}
 .navbar{
-    padding: 10px;
+    padding: 0 10px;
     overflow: hidden;
+    background-color: rgb(13, 13, 13);
 }
 .navbar a{
     float: right;
     display: block;
     margin: 0 25px ;
+    color: aliceblue;
     text-decoration: none;
+}
+.navbar a:hover{
+    background-color: rgba(136, 156, 174, 0.535);
+    padding: 0 10px;
+    border-radius: 10px;
 }
 .container{
     min-height: 100vh;
@@ -23,7 +34,9 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(13, 13, 13);
-    /* background-image: url(./img/download.jpg); */
+    background-image: url(./img/wp4715915-pink-and-black-aesthetic-laptop-wallpapers.jpg);
+    background-position: center;
+    /*  */
 }
     /* Description */
 .description{
@@ -31,6 +44,8 @@
     background-size: auto;
     background-position: top center;
     position: relative;
+    float: left;
+    font-family: 'Playfair Display';
 }
 .description #description{
     max-width: 1200px;
@@ -52,11 +67,13 @@
     font-size: 30px;
 }
 .description h1:nth-child(2){
+    animation: text_reveal_name .5s ease forwards;
     animation-delay: 2s;
+    font-size: 80px;
 }
 .description h1:nth-child(3){
-    animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
+    font-size: 20px;
 }
 .description h1 span{
     position: absolute;
@@ -101,30 +118,30 @@
     padding: 20vh;
     text-align: center;
 }
-.skills{
-    min-height: 100vh;
-    text-align: center;
-    justify-content: center;
-    padding: 20vh;
+.about h2{
+    font-size: 25px;
+    font-family: 'Raleway';
+    font-weight: 700px;
 }
-.skills ul{
-    display: inline-flex;
-    list-style: none;
-    padding: 10vh;
+.about p{
+    word-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: 400px;
 }
-.skills ul li{
-    width: 100px;
-    margin: 10px;
-    padding: 20px;
-    border: 10px, solid, black;
-    background-color: rgb(137, 180, 190);
+.about ul{
+    padding-top: 5px;
+    display: flex;
+
 }
 .projects{
     display: flex;
+    max-width: 1200px;
     justify-content: center;
     padding: 20vh;
     text-align: center;
 }
+
 .contact{
     padding: 20vh;
 }
