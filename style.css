@@ -269,7 +269,7 @@ footer{
     font-size: 12px;
 }
 /* responsive media queries */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     #heading{
 
     }
