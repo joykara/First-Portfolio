@@ -12,7 +12,7 @@
     font-family: cursive;
     color: aliceblue;
     font-size: 1.5em;
-    padding: 2px;
+    padding: 0 20px;
     margin-left: 30px;
 }
 #heading span{
@@ -267,4 +267,69 @@ footer{
     margin-top: -10px;
     margin-bottom: 5px;
     font-size: 12px;
+}
+/* responsive media queries */
+@media screen and (max-width: 600px){
+    #heading{
+
+    }
+    .navbar{
+        padding: 0 10px;
+        overflow: hidden;
+        background-color: black;
+    }
+    .navbar a{
+        float: right;
+        align-items: center;
+        display: block;
+        margin: 0 40px ;
+        color: aliceblue;
+        margin-top: -15px;
+        text-decoration: none;
+    }
+    .description{
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-content{
+        width: 1200px;
+        max-width: 100%;
+        margin: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-me{
+        width: 350px;
+    }
+    .about-me h2{
+        padding-top: 10px;
+    }
+    .myprojects{
+        background:#e6f9ff;
+        min-height: 105vh;
+        padding: 100px 0;
+        margin: auto;
+    }
+    #projects{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 500px;
+    }
+    .contact-info{
+        flex-direction: column;
+        height: 450px;
+    }
+    .contact-info h2{
+        margin-bottom: 20px;
+    }
+    .contact-col{
+        padding: 10px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
 }
