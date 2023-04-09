@@ -26,14 +26,16 @@
     float: right;
     align-items: center;
     display: block;
-    margin: 0 50px ;
+    margin: 0 40px ;
     color: aliceblue;
+    margin-top: -15px;
     text-decoration: none;
 }
 .navbar a:hover{
-    background-color: rgba(136, 156, 174, 0.535);
-    padding: 0 10px;
+    background-color: #aed9e6;
+    padding: 5px 10px;
     border-radius: 10px;
+    margin-top: -20px;
 }
 .container{
     min-height: 100vh;
@@ -161,14 +163,33 @@
     align-items: center;
     justify-content: space-around;
 }
-.projects{
-    display: flex;
-    max-width: 1200px;
-    justify-content: center;
-    padding: 20vh;
+.myprojects{
+    background:#e6f9ff;
+    min-height: 105vh;
+    padding: 100px 0;
+}
+.myprojects h2{
+    font-family: 'Alkatra';
+    font-size: 70px;
+    margin: auto;
     text-align: center;
 }
-
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+.project-card{
+    background: #aed9e6;
+    width: 350px;
+    height: 350px;
+    margin: 50px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
 .contact{
     padding: 20vh;
 }
