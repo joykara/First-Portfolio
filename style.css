@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Playfair+Display:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Merriweather:ital,wght@0,400;1,900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
 *
 {
     padding:0;
@@ -10,16 +10,23 @@
 #heading{
     font-family: cursive;
     color: aliceblue;
+    font-size: 1.5em;
+    padding: 2px;
+    margin-left: 30px;
+}
+#heading span{
+    animation: text_reveal_name .5s ease forwards;
 }
 .navbar{
     padding: 0 10px;
     overflow: hidden;
-    background-color: rgb(13, 13, 13);
+    background-color: black;
 }
 .navbar a{
     float: right;
+    align-items: center;
     display: block;
-    margin: 0 25px ;
+    margin: 0 50px ;
     color: aliceblue;
     text-decoration: none;
 }
@@ -31,8 +38,6 @@
 .container{
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(13, 13, 13);
     background-image: url(./img/wp4715915-pink-and-black-aesthetic-laptop-wallpapers.jpg);
     background-position: center;
@@ -40,9 +45,7 @@
 }
     /* Description */
 .description{
-    background-color: none;
-    background-size: auto;
-    background-position: top center;
+    margin: auto;
     position: relative;
     float: left;
     font-family: 'Playfair Display';
@@ -63,17 +66,17 @@
     animation-delay: 1.5s;
 }
 .description h1:nth-child(1){
-    animation-delay: 1s;
+    animation-delay: 2s;
     font-size: 30px;
 }
 .description h1:nth-child(2){
-    animation: text_reveal_name .5s ease forwards;
+    animation: text_reveal_name 2.5s ease forwards;
     animation-delay: 2s;
     font-size: 80px;
 }
-.description h1:nth-child(3){
+.description h3{
+    animation: text_reveal 3.5s ease forwards;
     animation-delay: 3s;
-    font-size: 20px;
 }
 .description h1 span{
     position: absolute;
@@ -83,7 +86,7 @@
     height: 100% ;
     nav-down: auto;
     background-color: rgb(137, 180, 190);
-    animation: text_reveal_box 1s ease-in;
+    animation: text_reveal_box 2s ease-in;
     animation-delay: 1s;
 }
     /* End Description */
@@ -111,28 +114,52 @@
 }
     /* end keyframe */
 .about{
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20vh;
-    text-align: center;
-}
-.about h2{
-    font-size: 25px;
-    font-family: 'Raleway';
-    font-weight: 700px;
-}
-.about p{
-    word-spacing: 2px;
-    font-size: 20px;
-    font-family: 'Raleway';
+    min-height: 105vh;
+    padding: 100px 0;
     font-weight: 400px;
+    background-color: #000200;
 }
-.about ul{
-    padding-top: 5px;
+.about img{
+    height: auto;
+    width: 300px;
+}
+.about-me{
+    width: 550px;
+    color: aliceblue;
+    word-spacing: 1px;
+}
+.about-me h2{
+    font-family: 'Alkatra';
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.about-me h2 span{
+    color: rgb(137, 180, 190);
+}
+.about-me p{
+    font-size: 20px;
+    font-family: 'Alkatra';
+    letter-spacing: 1px;
+}
+.about-me ul{
+    list-style-position: inside;
     display: flex;
-
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-me ul li{
+    font-size: 20px;
+    font-family: 'Merriweather';
+    padding: 30px;
+    color: rgb(137, 180, 190);
+}
+.about-content{
+    width: 1200px;
+    max-width: 100%;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .projects{
     display: flex;
