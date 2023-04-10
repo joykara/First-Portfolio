@@ -8,62 +8,56 @@
     margin: 0;
     box-sizing: border-box;
 }
-#heading{
-    font-family: cursive;
-    color: aliceblue;
-    font-size: 1.5em;
-    padding: 0 20px;
-    margin-left: 30px;
-}
-#heading span{
-    animation: text_reveal_name .5s ease forwards;
-}
-.navbar{
-    padding: 0 10px;
-    overflow: hidden;
-    background-color: black;
-}
-.navbar a{
-    float: right;
-    align-items: center;
-    display: block;
-    margin: 0 40px ;
-    color: aliceblue;
-    margin-top: -15px;
-    text-decoration: none;
-}
-.navbar a:hover{
-    background-color: #8ad4ea;
-    color: #000200;
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin-top: -20px;
-}
 .container{
     min-height: 100vh;
-    display: flex;
     background-color: rgb(13, 13, 13);
     background-image: url(./img/wp4715915-pink-and-black-aesthetic-laptop-wallpapers.jpg);
     background-position: center;
     /*  */
 }
+#heading{
+    font-family: cursive;
+    color: aliceblue;
+    font-size: 1.5em;
+    padding: 30px;
+}
+#heading span{
+    animation: text_reveal_name .5s ease forwards;
+}
+nav{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+nav a{
+    float: right;
+    align-items: center;
+    display: block;
+    padding: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #8ad4ea;
+    color: #000200;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
     /* Description */
 .description{
-    margin: auto;
-    position: relative;
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 15%;
     font-family: 'Playfair Display';
-}
-.description #description{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 50px;
-    justify-content: flex-start;
 }
 .description h1{
     font-size: 2.5rem;
     color:transparent;
-    display: block;
     width: fit-content;
     position: relative;
     animation: text_reveal .5s ease forwards;
@@ -149,13 +143,13 @@
 .about-me ul{
     list-style-position: inside;
     display: flex;
-    justify-content: space-between;
+    align-content: space-evenly;
     flex-wrap: wrap;
+    gap: 2em;
 }
 .about-me ul li{
     font-size: 20px;
     font-family: 'Josefin Sans';
-    padding: 30px;
     color: #57c9e3;
 }
 .about-content{
@@ -270,9 +264,6 @@ footer{
 }
 /* responsive media queries */
 @media screen and (max-width: 800px){
-    #heading{
-
-    }
     .navbar{
         padding: 0 10px;
         overflow: hidden;
@@ -288,14 +279,20 @@ footer{
         text-decoration: none;
     }
     .description{
-        margin:auto;
+        margin-top: 30vh;
         align-items: center;
         justify-content: center;
+    }
+    .description h1:nth-child(1){
+        font-size: 25px;
+    }
+    .description h1:nth-child(2){
+        font-size: 60px;
     }
     .about-content{
         width: 1200px;
         max-width: 100%;
-        margin: 40px;
+        margin: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -316,7 +313,7 @@ footer{
     #projects{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: column;
         min-height: 500px;
     }
