@@ -264,20 +264,6 @@ footer{
 }
 /* responsive media queries */
 @media screen and (max-width: 800px){
-    .navbar{
-        padding: 0 10px;
-        overflow: hidden;
-        background-color: black;
-    }
-    .navbar a{
-        float: right;
-        align-items: center;
-        display: block;
-        margin: 0 40px ;
-        color: aliceblue;
-        margin-top: -15px;
-        text-decoration: none;
-    }
     .description{
         margin-top: 30vh;
         align-items: center;
