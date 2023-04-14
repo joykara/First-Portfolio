@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Playfair+Display:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Merriweather:ital,wght@0,400;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+}
+#heading{
+    font-family: cursive;
+    color: #000;
+    font-size: 1.2em;
+    padding: 30px;
+}
+#heading span{
+    animation: text_reveal_name .5s ease forwards;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px 6px;
+    transition: all 0.5s ease-in-out;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+}
+    /* Description */
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+    margin: 15%;
+    font-family: 'Josefin Sans';
+}
+.description h1{
+    font-family: 'Playfair Display';
+    font-size: 2.5rem;
+    color:transparent;
+    width: fit-content;
+    position: relative;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+.description h1:nth-child(1){
+    animation-delay: 2.5s;
+    font-size: 30px;
+}
+.description h1:nth-child(2){
+    animation: text_reveal_name 3s ease forwards;
+    animation-delay: 2.5s;
+    font-size: 80px;
+}
+.description h3{
+    font-size: 5px;
+    animation: text_reveal 3.5s ease forwards;
+    animation-delay: 3s;
+}
+.description h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100% ;
+    nav-down: auto;
+    background-color:#aed9e6;
+    animation: text_reveal_box 2s ease-in;
+    animation-delay: 1s;
+}
+    /* End Description */
+
+    /*keyframes */
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0 ;
+        }
+    100%{
+        width: 0;
+        left: 100% ;
+        }
+}
+@keyframes text_reveal{
+    100%{
+        color: #000;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: #2bd0f5;
+    }
+}
+    /* end keyframe */
+#about-section{
+    min-height: 105vh;
+    padding: 100px 0;
+    font-weight: 400px;
+}
+#about-section img{
+    height: auto;
+    width: 300px;
+    border: 3px solid #2bd0f5;
+    border-radius: 25%;
+    transition: all .5s ease-out;
+}
+#about-section img:hover{
+    border: 5px solid #05141f;
+    cursor: pointer;
+    transform: translateX(-5px) translateY(-15px);
+}
+.about-me{
+    width: 550px;
+    color: #000;
+    word-spacing: 1px;
+}
+.about-me h2{
+    font-family: 'Alkatra';
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.about-me h2 span{
+    color: #2bd0f5;
+}
+.about-me p{
+    font-size: 20px;
+    font-family: 'Alkatra';
+    letter-spacing: 1px;
+}
+.about-me ul{
+    list-style-position: inside;
+    display: flex;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.about-me ul li{
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    color: #57c9e3;
+}
+.about-content{
+    width: 1200px;
+    max-width: 100%;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#myprojects{
+    background:#e6f9ff;
+    min-height: 105vh;
+    padding: 100px 0;
+}
+#myprojects h2{
+    font-family: 'Alkatra';
+    font-size: 70px;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+.project-card{
+    background: #aed9e6;
+    font-family: 'Merriweather';
+    width: 350px;
+    height: 420px;
+    margin: 50px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
+.project-card h3{
+    color: #05141f;
+    font-family: 'Alkatra';
+}
+.project-info{
+    font-size: 12px;
+    line-height: 30px;
+}
+.project-info p{
+    margin-bottom: 20px;
+}
+.project-info .button{
+    text-align: center;
+    text-decoration: none;
+    background-color: #000200;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 15px;
+    transition: .8s;
+}
+.project-info .button:hover{
+    background-color: #fff;
+    color: #000200;
+    border: 2px solid #05141f;
+    cursor: pointer;
+}
+.contact-info{
+    width: 100%;
+    height: 150px;
+    background: #000;
+    color: #2bd0f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-info h2{
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    margin: 40px;
+    text-align: left;
+}
+.contact-col{
+    width: 350px;
+    height: 150px;
+    margin: 0px;
+    padding: 20px;
+    overflow: hidden;
+}
+.contact-col h4{
+    color: #e6f9ff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.contact-col a{
+    text-decoration: none;
+    color:#fff ;
+    display: inline-flex;
+    margin-right: 10px;
+}
+.contact-col a i{
+    margin-right: 5px;
+}
+footer{
+    background: #05141f;
+    color: #e6f9ff;
+    font-family: 'Josefin Sans';
+    padding: 0px 50px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+@media screen and (max-width: 800px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+    }
+    nav ul li{
+        padding: 0 10px;
+    }
+    .container{
+        height: 75vh;
+    }
+    .description h1:nth-child(2){
+        padding-top: 10px;
+        font-size: 55px;
+    }
+    .description{
+        margin-top: 30vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .description h1:nth-child(1){
+        font-size: 25px;
+    }
+    .description h1:nth-child(2){
+        font-size: 60px;
+    }
+    .about-content{
+        width: 1200px;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-me{
+        width: 350px;
+    }
+    .about-me h2{
+        padding-top: 10px;
+    }
+    #myprojects{
+        background:#e6f9ff;
+        min-height: 105vh;
+        padding: 100px 0;
+        margin: auto;
+    }
+    #projects{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        min-height: 500px;
+    }
+    .contact-info{
+        flex-direction: column;
+        height: 450px;
+    }
+    .contact-info h2{
+        margin-bottom: 20px;
+    }
+    .contact-col{
+        padding: 10px;
+        height: 100px;
+        margin-bottom: -10px;
+    }
+}
+@media screen and (max-width: 400px){
+    nav{
+        padding: 15px 10px;
+    }
+    nav ul li{
+        padding: 0 5px;
+    }
+}
